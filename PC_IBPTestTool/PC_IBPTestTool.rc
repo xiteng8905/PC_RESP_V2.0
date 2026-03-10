@@ -1,0 +1,395 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PC_IBPTestTool.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PC_IBPTestTool.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PC_IBPTESTTOOL_DIALOG DIALOGEX 0, 0, 487, 240
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 12, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    LTEXT           "Wave",IDC_STATIC_WAVE,7,58,51,8
+    PUSHBUTTON      "Start",IDC_BUTTON_START,430,95,44,27
+    LTEXT           "PRESSURE",IDC_PRESSURE,265,82,55,24,0,WS_EX_RIGHT
+    PUSHBUTTON      "关闭",ID_TOPQUIT,463,7,17,14
+    CTEXT           "RESPRATE",IDC_RESPRATE,269,107,55,24
+    PUSHBUTTON      "SaveWave",IDC_SAVEDATA,430,203,44,27
+    PUSHBUTTON      "Calibration",IDC_CALIBRATION,430,131,44,27
+    PUSHBUTTON      "BasePress",IDC_BUTTON1,430,167,44,27
+    PUSHBUTTON      ">>",IDC_SETMODE,474,26,12,11
+END
+
+IDD_SETCOMM_Dlg DIALOGEX 0, 0, 164, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "串口选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,107,97,50,14
+    PUSHBUTTON      "取消",IDCANCEL,107,118,50,14
+    CONTROL         "  串口  一",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,31,29,48,10
+    CONTROL         "  串口  二",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,31,55,48,10
+    CONTROL         "  串口  三",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,31,81,48,10
+    CONTROL         "  串口  四",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,31,107,48,10
+    GROUPBOX        "串口选择",IDC_STATIC,7,7,94,129
+    CONTROL         "Resp",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,112,33,32,10
+    CONTROL         "SpO2",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,112,49,33,10
+    GROUPBOX        "Mode",IDC_STATIC,105,36,52,27
+END
+
+IDD_CALDLG DIALOGEX 0, 0, 79, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "启动校准",IDC_START_CAL,18,36,47,25
+    PUSHBUTTON      "确认校准",IDC_CONF_CAL,18,71,47,25
+    PUSHBUTTON      "取消校准",IDC_CANCEL_CAL,18,106,47,25
+    CTEXT           "校准操作",IDC_TITLE1,8,10,58,11
+    GROUPBOX        "",IDC_STATIC,6,26,65,108
+    GROUPBOX        "",IDC_STATIC,7,2,65,23
+END
+
+IDD_BASEPRUSS_DIALOG DIALOGEX 0, 0, 99, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "基础压力设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_INTPUTVALUE,24,29,50,17,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "基础压力：",IDC_STATIC,21,14,45,11
+    PUSHBUTTON      "退  出",IDNO,25,89,49,23
+    PUSHBUTTON      "确  认",IDC_BUTTON_OK,25,57,49,23
+END
+
+IDD_SLEEPMONITOR_DIALOG DIALOGEX 0, 0, 410, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 16, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "RespWave",IDC_RESPWAVE,7,98,36,8
+    LTEXT           "SpO2Wave",IDC_PULSEWAVE,7,129,37,8
+    LTEXT           "ViewValue",IDC_VEIWVALUE,246,7,125,167
+    PUSHBUTTON      "X",IDC_QUIT,382,7,21,14
+    LTEXT           "REDWave",IDC_STATIC_RED,7,68,39,8
+    LTEXT           "Static",IDC_STATIC_ADDSHOW,170,17,19,8
+END
+
+IDD_DATAANALYSIS_DIALOG DIALOGEX 0, 0, 328, 162
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 14, "Microsoft Sans Serif", 700, 0, 0x0
+BEGIN
+    PUSHBUTTON      "X",IDCANCEL,304,7,17,14
+    LTEXT           "SPO2Wave",IDC_STATIC_SPO2WAVE,10,7,44,12
+    SCROLLBAR       IDC_MYSCROLLBAR,7,77,99,8
+    LTEXT           "pulseWave",IDC_STATIC_PULSEWAVE,10,21,42,11
+    LTEXT           "RespWave",IDC_STATIC_RESPWAVE,10,35,42,11
+    LTEXT           "RespRate",IDC_STATIC_RESPRATE,10,49,42,11
+    LTEXT           "PR",IDC_STATIC_PR,10,63,42,11
+    PUSHBUTTON      "…",IDC_BUTTON_OPENFILE,191,7,17,14,BS_CENTER
+    EDITTEXT        IDC_EDIT_FILEPATH,176,143,66,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "+",IDC_BUTTON_PULSEP,7,96,10,29
+    PUSHBUTTON      "-",IDC_BUTTON_PULSEM,7,126,10,29
+    PUSHBUTTON      "+",IDC_BUTTON_SPO2P,25,96,10,29
+    PUSHBUTTON      "-",IDC_BUTTON_SPO2M,25,126,10,29
+    PUSHBUTTON      "+",IDC_BUTTON_RESPWAVEP,45,96,10,29
+    PUSHBUTTON      "-",IDC_BUTTON_RESPWAVEM,45,126,10,29
+    PUSHBUTTON      "+",IDC_BUTTON_RRP,65,96,10,29
+    PUSHBUTTON      "-",IDC_BUTTON_RRM,65,126,10,29
+    PUSHBUTTON      "+",IDC_BUTTON_PRP,86,96,10,29
+    PUSHBUTTON      "-",IDC_BUTTON_PRM,86,126,10,29
+    PUSHBUTTON      "-",IDC_BUTTON_MIN,213,7,13,14
+    PUSHBUTTON      "默认显示",IDC_BUTTON_VIEWRESTORE,100,141,34,14
+    PUSHBUTTON      "确认设置",IDC_BUTTON_SETUP,208,40,32,15
+    COMBOBOX        IDC_COMBO_RR,184,43,16,26,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PR,161,43,16,26,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPO2,136,43,16,26,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_MEASSAGE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,130,65,112,66
+    GROUPBOX        "报警线设置",IDC_STATIC_SETWORNING,136,30,105,33
+END
+
+IDD_TREND_DIALOG DIALOGEX 0, 0, 191, 97
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_TRENDCHART,53,26,110,66
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PC_IBPTestTool.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "PC_IBPTestTool.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PC_IBPTESTTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_SETCOMM_Dlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_CALDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_BASEPRUSS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 91
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_SLEEPMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 403
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DATAANALYSIS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_TREND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_IBPMain             BITMAP                  "IBPMain.bmp"
+
+IDB_QUIT2               BITMAP                  "quit1.bmp"
+
+IDB_QUIT1               BITMAP                  "quit2.bmp"
+
+IDB_SLEEPIMAGE          BITMAP                  "SleepMainView.bmp"
+
+IDB_IBPMainNew          BITMAP                  "SleepMainView _New.bmp"
+
+IDB_SPO2New             BITMAP                  "SleepMainView _NewAdd.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENUEX
+BEGIN
+    POPUP "Menu",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        POPUP "工作状态设置",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "停止监测",                        ID_MODULESTOP,MFT_STRING,MFS_ENABLED
+            MENUITEM "开始监测",                        ID_MODULESTART,MFT_STRING,MFS_ENABLED
+        END
+        POPUP "设置病人类型",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "成人",                          ID_SETADULTMODE,MFT_STRING,MFS_CHECKED
+            MENUITEM "儿童",                          ID_SETCHILDMODE,MFT_STRING,MFS_ENABLED
+            MENUITEM "新生儿",                         ID_SETNEWBORNMODE,MFT_STRING,MFS_ENABLED
+        END
+        POPUP "扫描速度",                           65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM " 62.50点/s",                   ID_SCAN500,MFT_STRING | MFT_RIGHTORDER,MFS_CHECKED
+            MENUITEM "31.25点/s",                    ID_SCAN250,MFT_STRING,MFS_ENABLED
+            MENUITEM "21.00点/s",                    ID_SCAN125,MFT_STRING,MFS_ENABLED
+            MENUITEM "10.50点/s",                    ID_SCAN100,MFT_STRING,MFS_ENABLED
+            MENUITEM "5.25点/s",                     ID_SCAN50,MFT_STRING,MFS_ENABLED
+        END
+        POPUP "呼吸灵敏度设置",                        65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "一级灵敏度（最不灵敏）",                 ID_SENSITIVTY1,MFT_STRING,MFS_ENABLED
+            MENUITEM "二级灵敏度",                       ID_SENSITIVTY2,MFT_STRING,MFS_ENABLED
+            MENUITEM "三级灵敏度",                       ID_SENSITIVTY3,MFT_STRING,MFS_ENABLED
+            MENUITEM "四级灵敏度",                       ID_SENSITIVTY4,MFT_STRING,MFS_ENABLED
+            MENUITEM "五级灵敏度",                       ID_SENSITIVTY5,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "查询模块信息",                      ID_MENU_QUERYINFO,MFT_STRING,MFS_ENABLED
+        MENUITEM "漏气检查",                        ID_MENU_CHECKLEAKAGE,MFT_STRING,MFS_ENABLED
+        MENUITEM "复位模块",                        ID_MENU_RESETMODULE,MFT_STRING,MFS_ENABLED
+        MENUITEM "设置基础压力",                      ID_MENU_SETBASEPRESS,MFT_STRING,MFS_ENABLED
+        MENUITEM "刷新界面",                        ID_MENU_REBRUSH,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MENU_SLEEP MENU
+BEGIN
+    POPUP "SLEEP"
+    BEGIN
+        POPUP "Set Patient Type"
+        BEGIN
+            MENUITEM "Adult",                       ID_SETPATIENTTYPE_32835
+            MENUITEM "Pediatric",                   ID_SETPATIENTTYPE_32836
+            MENUITEM "Neonatal",                    ID_SETPATIENTTYPE_32837
+        END
+        MENUITEM "Data Analysis",               ID_SLEEP_DATAANALYSIS
+        MENUITEM "Save Wave",                   ID_SLEEP_SAVEWAVE
+        MENUITEM "Self Test",                   ID_SLEEP_SELFTEST
+        MENUITEM "Quit",                        ID_SLEEP_QUIT
+    END
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PC_IBPTestTool.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
